@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body id="home" onload="displayMessages();">
+    <div class="nav">
+      <h4 class="title">MessageBoard.io</h1>
+      <ul id="navBar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="messages">
+      <div id="myMessagesTitle">
+        <h3> My Messages </h3>
+        <button id="buttonBorder" onclick="clearMessages();">Clear Messages</button>
+      </div>
+      <div id="myMessages"></div>
+    </div>
+
+    <form id="addMessageForm">
+      <label id="formLable">New Message</label>
+      <input id="message" type="text"/>
+      <input class="button" type="button" value="Submit" onclick="addMessage();"/>
+      <input class="button" type="reset"/>
+    </form>
+  </body>
+</html>
